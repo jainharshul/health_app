@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Symptoms Button -->
+    <Button
+        android:id="@+id/btn_symptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SYMPTOMS"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Upload Signs Button -->
+    <Button
+        android:id="@+id/btn_upload_signs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD SIGNS"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Placeholder for Back Facing Camera -->
+    <VideoView
+        android:id="@+id/tv_camera"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Heart Rate Measurement -->
+    <TextView
+        android:id="@+id/tv_heart_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate Result"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Measure Heart Rate Button -->
+    <Button
+        android:id="@+id/btn_measure_heart_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEASURE HEART RATE"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Respiratory Rate Measurement -->
+    <TextView
+        android:id="@+id/tv_respiratory_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Respiratory Rate Result"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Measure Respiratory Rate Button -->
+    <Button
+        android:id="@+id/btn_measure_respiratory_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEASURE RESPIRATORY RATE"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
