@@ -2,15 +2,15 @@
 
 Question 1:
 The Specifications that I would provide are as follows:
-Hardware
+- Hardware
 * The accelerometer is used to detect motion of the phone in space. This will help find the respiration activity. By analyzing the movement of the chest or of the body while breathing, the app will estimate the respiratory rate of the user. 
 * The phone’s camera will be used for detecting heart rate. The app will analyze the changes in pixel intensity as blood pulses through the user's skin. The camera will be set to capture video at specific frame rates to ensure a clear signal. The rear-facing camera will be used for this purpose, and the app will analyze red pixel values from each frame.
-Software
+- Software
 * The UI will be simple and user-friendly, allowing users to monitor their heart rate and respiratory rate in real time
 * Kotlin: Kotlin will be the primary language for the Android app's development. 
 * Java: Java will be used for any existing libraries or APIs that are required for advanced sensor integration or low-level tasks. 
 * The app will store heart rate and respiratory rate data along with symptoms locally on the device, using SQLite for efficient storage and retrieval.
-Algorithm
+- Algorithm
 The camera will be used to capture a video of the user’s fingertip or face. By analyzing the red channel of the pixel values in each frame, the app will detect subtle variations caused by blood flow beneath the skin.
 The algorithm will identify peaks in the PPG signal that correspond to heartbeats. By calculating the time interval between peaks, the app will derive the user’s heart rate in beats per minute (BPM).
 
