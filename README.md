@@ -11,8 +11,8 @@ The Specifications that I would provide are as follows:
 * Java: Java will be used for any existing libraries or APIs that are required for advanced sensor integration or low-level tasks. 
 * The app will store heart rate and respiratory rate data along with symptoms locally on the device, using SQLite for efficient storage and retrieval.
 - Algorithm
-The camera will be used to capture a video of the user’s fingertip or face. By analyzing the red channel of the pixel values in each frame, the app will detect subtle variations caused by blood flow beneath the skin.
-The algorithm will identify peaks in the PPG signal that correspond to heartbeats. By calculating the time interval between peaks, the app will derive the user’s heart rate in beats per minute (BPM).
+* The camera will be used to capture a video of the user’s fingertip or face. By analyzing the red channel of the pixel values in each frame, the app will detect subtle variations caused by blood flow beneath the skin.
+* The algorithm will identify peaks in the PPG signal that correspond to heartbeats. By calculating the time interval between peaks, the app will derive the user’s heart rate in beats per minute (BPM).
 
 
 Question 2: 
