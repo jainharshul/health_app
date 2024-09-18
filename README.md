@@ -1,6 +1,19 @@
 # This project does not include the MP4 file required to run the application it must be downloaded and placed in the raw folder and renamed to "beats.mp4"
 
 Question 1:
+The Specifications that I would provide are as follows:
+Hardware
+* The accelerometer is used to detect motion of the phone in space. This will help find the respiration activity. By analyzing the movement of the chest or of the body while breathing, the app will estimate the respiratory rate of the user. 
+* The phone’s camera will be used for detecting heart rate. The app will analyze the changes in pixel intensity as blood pulses through the user's skin. The camera will be set to capture video at specific frame rates to ensure a clear signal. The rear-facing camera will be used for this purpose, and the app will analyze red pixel values from each frame.
+Software
+* The UI will be simple and user-friendly, allowing users to monitor their heart rate and respiratory rate in real time
+* Kotlin: Kotlin will be the primary language for the Android app's development. 
+* Java: Java will be used for any existing libraries or APIs that are required for advanced sensor integration or low-level tasks. 
+* The app will store heart rate and respiratory rate data along with symptoms locally on the device, using SQLite for efficient storage and retrieval.
+Algorithm
+The camera will be used to capture a video of the user’s fingertip or face. By analyzing the red channel of the pixel values in each frame, the app will detect subtle variations caused by blood flow beneath the skin.
+The algorithm will identify peaks in the PPG signal that correspond to heartbeats. By calculating the time interval between peaks, the app will derive the user’s heart rate in beats per minute (BPM).
+
 
 Question 2: 
 Using the stored symptoms data, enhanced monitoring techniques could be implemented to continuously monitor physiological data. There could be a development of assessment algorithms that analyze both the heart rate and the respiration rate along with the symptoms to indicate a need for urgent medical attention. Using the context-sensing capabilities of bHealthy the symptoms that are stored in the locale database along with the signs could be used to recognize patterns in the users life. Personal recommendations can also be made. Based on the patterns and data that was assessed, personal feedback and suggestions could be implemented to suggest activities that could help aid in the symptoms such as “apply cold towel to head” for a fever rated with 5 stars. Activities such as hydration and bed rest can be recommended as a result of patterns that were previously recognized. Along with this training applications can be implemented within the app. For example BrainHealth can suggest relaxation exercises. A model could be developed that learns from the users historical data and patterns along with ongoing symptoms to improve the accuracy of future suggestions for medication or treatments. The model could be improved to account for all 1-5 levels of symptoms and adapt feedback accordingly. A wellness report can be generated every so often for the user to have a complete overview, which compiles symptom data, heart and respiratory rates, and health trends along with suggested activity effectiveness. Feedback on this could be provided to the user showing them how recommended treatments worked for them. Overall, integrating with existing tools from bHealthy, combining symptom and physiological data with feedback or activity tracking will help build a novel context sensing application.
